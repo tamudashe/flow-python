@@ -23,3 +23,5 @@
     `python manage.py migrate internships`
 
 1. Create superuser for django admin
+
+* write tests for the project

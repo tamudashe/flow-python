@@ -17,15 +17,25 @@
             <a href="{% url 'internships' %}">Internships</a>
         </h1>
     </header>
+
     <!-- main content in different pages -->
     <main>
         {% block content %} {% endblock content %}
     </main>
+    
     <!-- footer: global to every page on the site -->
     <footer>
         <div class="terms">
+            <div class="flow-logo">
+                <p>FLOW</p>
+            </div>
             <div class="text">
-                Copyright &copy; 2020 Flow All rights reserved.
+                Copyright &copy; 
+                <!-- update every year automatically -->
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+                Flow All rights reserved.
             </div>
             <div class="other-stuff">
                 <ul class="o-stuff">
