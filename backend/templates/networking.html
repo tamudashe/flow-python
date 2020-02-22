@@ -1,12 +1,14 @@
-<!-- templates/internships.html -->
+<!-- templates/networking.html -->
 {% extends 'base.html' %} 
 {% block content %} 
     {% for post in object_list %}
-        <div class="post-entry-internships">
+        <div class="post-entry-networking">
             <p>{{post.company_name}}</p>
             <p>{{post.title}}</p>
+            <p>{{post.industry}}</p>
             <p>{{post.location}}</p>
             <p>{{post.classification}}</p>
+            <p>{{post.deadline}}</p>
             <a href={{post.application_link}} target="_blank">Apply</a>
         </div>
     {% endfor %} 

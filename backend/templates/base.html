@@ -6,16 +6,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internships</title>
+    <title>FLOW</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 
 <body>
     <!-- header: global to every page on the site -->
     <header>
-        <h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Learn</a>
+            <a href="#">Code</a>
+            <a href="#">Interview</a>
             <a href="{% url 'internships' %}">Internships</a>
-        </h1>
+            <a href="{% url 'networking' %}">Conferences</a> 
+            <a href="#">Blog</a> 
+        </nav>
     </header>
 
     <!-- main content in different pages -->

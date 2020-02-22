@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'internships.apps.InternshipsConfig',  # list of internships
+    'networking.apps.NetworkingConfig',  # list of networking conferences
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
