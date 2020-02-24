@@ -1,6 +1,5 @@
 /* static/css/base.css  */
 
-/* Styles de base */
 * {
     font-size: 100%;
     margin: 0;
@@ -40,29 +39,33 @@ a {
 ul {
     list-style-type: none;
 }
+
 /* header */
-header{
+header {
     background-color: #333333;
     position: fixed;
     width: 100vw;
 }
 nav {
-    height: 5vh;
+    height: 4vh;
     text-align: center;
     width: 60vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
 }
 header a {
-    font-size: 1rem;
-    color: #f4f4f4;
+    color: #9d9c9c;
+    transition: all 0.2s ease-in-out;
+}
+header a:hover {
+    color: #ffffff;
 }
 
 /* main */
-main  {
+main {
     min-height: 100vh;
     margin-top: 10vh;
 }
@@ -71,7 +74,7 @@ main  {
     display: grid;
     background-color: #f4f4f4;
     grid-template-columns: 2fr 3fr 1fr 3fr 1fr;
-    grid-gap: 2rem;;
+    grid-gap: 2rem;
     border-radius: 5px;
     width: 60vw;
     margin: 10px auto;
@@ -84,7 +87,7 @@ main  {
     border-radius: 5px;
     text-align: center;
     padding: 2px 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .post-entry-internships a:hover {
     transform: scale(1.1);
@@ -94,8 +97,8 @@ main  {
 .post-entry-networking {
     display: grid;
     background-color: #f4f4f4;
-    grid-template-columns: 2fr 5fr 1fr .5fr 2fr 1.2fr 1fr;
-    grid-gap: 1rem;;
+    grid-template-columns: 2fr 5fr 1fr 0.5fr 2fr 1.2fr 1fr;
+    grid-gap: 1rem;
     border-radius: 5px;
     width: 80vw;
     margin: 10px auto;
@@ -108,24 +111,21 @@ main  {
     border-radius: 5px;
     text-align: center;
     padding: 2px 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .post-entry-networking a:hover {
     transform: scale(1.1);
 }
 
-
-
 /* Footer */
-footer{
+footer {
     position: relative;
     background-color: #333333;
     color: #f4f4f4;
     height: 10vh;
 }
-footer .terms
-{
-    font-size: .7em;
+footer .footer-container {
+    font-size: 0.7em;
     width: 60vw;
     height: 100%;
     margin: auto;
@@ -133,17 +133,8 @@ footer .terms
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
-footer .terms .flow-logo p{
+footer .footer-container .flow-logo p {
     font-size: 3rem;
     font-weight: 800;
     color: #404040;
-}
-footer .terms .other-stuff ul li
-{
-    display: inline-block;
-    padding-right: 10px;
-}
-footer .terms .other-stuff ul li a
-{
-    color: #f4f4f4;
 }

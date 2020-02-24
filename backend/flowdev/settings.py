@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'algotutor.apps.AlgotutorConfig',  # tutorials for algorithms
+    'landing.apps.LandingConfig',  # landing page
     'internships.apps.InternshipsConfig',  # list of internships
     'networking.apps.NetworkingConfig',  # list of networking conferences
     'django.contrib.admin',
