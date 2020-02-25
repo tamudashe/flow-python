@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include  # new
 
+from django.views.generic import TemplateView  # new
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')), # new: for user login
     path('', include('landing.urls')),  # new
     path('algotutor/', include('algotutor.urls')), # new
     path('internships/', include('internships.urls')),  # new

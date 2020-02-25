@@ -4,3 +4,8 @@ mysqlclient==1.4.6
 pytz==2019.3
 sqlparse==0.3.0
 
+* for authentication: allow users to login using google
+django-allauth
+
+client id: 755502556675-2a58krvmuolehosdkfdipcpp8miiju3c.apps.googleusercontent.com
+client secret: PM7tdgnS6WUywy-CO_UBS_r2

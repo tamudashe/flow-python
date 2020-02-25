@@ -35,14 +35,27 @@ INSTALLED_APPS = [
     'landing.apps.LandingConfig',  # landing page
     'internships.apps.InternshipsConfig',  # list of internships
     'networking.apps.NetworkingConfig',  # list of networking conferences
+    'accounts.apps.AccountsConfig',  # user accounts
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',  # new
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'multiselectfield', # multiple selection of choices
+    'multiselectfield',  # multiple selection of choices
+
+    # user authentication
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    # allow users to login with google
+    'allauth.socialaccount.providers.google',
 ]
+
+# tell django to use the first site as the default site id
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -67,6 +80,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # `allauth` needs this from django
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -126,3 +142,31 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# redirect user to the home page after they successfully login or logout
+LOGIN_REDIRECT_URL = 'landing'
+LOGOUT_REDIRECT_URL = 'landing'
+
+# Django All Auth settings
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+
+# Provider specific settings
+# SOCIALACCOUNT_PROVIDERS = {
+#     'google': {
+#         # For each OAuth based provider, either add a ``SocialApp``
+#         # (``socialaccount`` app) containing the required client
+#         # credentials, or list them here:
+#         'APP': {
+#             'client_id': '755502556675-2a58krvmuolehosdkfdipcpp8miiju3c.apps.googleusercontent.com',
+#             'secret': 'PM7tdgnS6WUywy-CO_UBS_r2',
+#             'key': ''
+#         }
+#     }
+# }
