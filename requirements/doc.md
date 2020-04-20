@@ -18,7 +18,7 @@
 * Backup database
     `mysqldump -u root -p flow > flow.sql`
 
-* After seting up models.py migrate
+* After setting up models.py migrate
     `python manage.py makemigrations internships`
     `python manage.py migrate internships`
 

@@ -52,7 +52,7 @@ nav {
     width: 60vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
 }
@@ -64,16 +64,56 @@ header a:hover {
     color: #ffffff;
 }
 
-header .login:hover {
-    color: #00cc6a;
-}
-
 /* main */
 main {
     min-height: 100vh;
-    margin-top: 10vh;
+    padding-bottom: 15vh;
 }
+/* home */
+.home {
+    height: 100vh;
+}
+
+/* Algotutor */
+.body-algotutor {
+    width: 60vw;
+    margin: 10px auto;
+    text-align: center;
+}
+.contents-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.contents-nav a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px;
+}
+.h1-algotutor {
+    font-size: 2rem;
+    text-align: center;
+    padding: 8vh 0 4vh 0;
+    color: #F65A5B;
+}
+.post-entry-algotutor {
+    display: grid;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 50px;
+}
+
 /* internships */
+.h1-internships {
+    font-size: 2rem;
+    text-align: center;
+    padding: 8vh 0 4vh 0;
+    color: #F65A5B;
+}
 .post-entry-internships {
     display: grid;
     background-color: #f4f4f4;
@@ -98,6 +138,14 @@ main {
 }
 
 /* networking */
+.h1-networking {
+    font-size: 4rem;
+    padding: 8vh 0 4vh 0;
+    text-align: center;
+    color: #F65A5B;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
 .post-entry-networking {
     display: grid;
     background-color: #f4f4f4;
@@ -123,10 +171,10 @@ main {
 
 /* Footer */
 footer {
-    position: relative;
     background-color: #333333;
     color: #f4f4f4;
     height: 10vh;
+    margin-bottom: -10vh;
 }
 footer .footer-container {
     font-size: 0.7em;

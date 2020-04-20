@@ -1,5 +1,7 @@
 <!-- templates/networking.html -->
-{% extends 'base.html' %} {% block content %} {% for post in object_list %}
+{% extends 'base.html' %} {% block content %}
+<h1 class="h1-networking">Networking...</h1>
+{% for post in object_list %}
 <div class="post-entry-networking">
     <p>{{post.company_name}}</p>
     <p>{{post.title}}</p>

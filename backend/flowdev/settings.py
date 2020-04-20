@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'landing.apps.LandingConfig',  # landing page
     'internships.apps.InternshipsConfig',  # list of internships
     'networking.apps.NetworkingConfig',  # list of networking conferences
-    'accounts.apps.AccountsConfig',  # user accounts
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',  # new
@@ -45,13 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'multiselectfield',  # multiple selection of choices
 
-    # user authentication
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-
-    # allow users to login with google
-    'allauth.socialaccount.providers.google',
+    'markdown_deux',   # markdown for posts
 ]
 
 # tell django to use the first site as the default site id
@@ -155,18 +148,3 @@ AUTHENTICATION_BACKENDS = (
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
-
-
-# Provider specific settings
-# SOCIALACCOUNT_PROVIDERS = {
-#     'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': '755502556675-2a58krvmuolehosdkfdipcpp8miiju3c.apps.googleusercontent.com',
-#             'secret': 'PM7tdgnS6WUywy-CO_UBS_r2',
-#             'key': ''
-#         }
-#     }
-# }

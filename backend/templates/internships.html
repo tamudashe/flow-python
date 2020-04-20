@@ -1,5 +1,7 @@
 <!-- templates/internships.html -->
-{% extends 'base.html' %} {% block content %} {% for post in object_list %}
+{% extends 'base.html' %} {% block content %}
+<h1 class="h1-internships">Best Software Engineering Internships</h1>
+{% for post in object_list %}
 <div class="post-entry-internships">
     <p>{{post.company_name}}</p>
     <p>{{post.title}}</p>
