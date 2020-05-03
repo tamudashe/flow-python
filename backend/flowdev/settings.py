@@ -31,20 +31,18 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'algotutor.apps.AlgotutorConfig',  # tutorials for algorithms
-    'landing.apps.LandingConfig',  # landing page
-    'internships.apps.InternshipsConfig',  # list of internships
-    'networking.apps.NetworkingConfig',  # list of networking conferences
+    'landing.apps.LandingConfig',
+    'internships.apps.InternshipsConfig',
+    'networking.apps.NetworkingConfig',
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.sites',  # new
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'multiselectfield',  # multiple selection of choices
-
-    'markdown_deux',   # markdown for posts
+    'allauth',
+    'multiselectfield'
 ]
 
 # tell django to use the first site as the default site id
@@ -92,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'flow',
         'USER': 'root',
-        'PASSWORD': 't772s9cato',
+        'PASSWORD': 'T@772s9cato',
     }
 }
 

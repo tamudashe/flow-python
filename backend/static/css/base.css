@@ -74,39 +74,6 @@ main {
     height: 100vh;
 }
 
-/* Algotutor */
-.body-algotutor {
-    width: 60vw;
-    margin: 10px auto;
-    text-align: center;
-}
-.contents-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-.contents-nav a {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 5px;
-}
-.h1-algotutor {
-    font-size: 2rem;
-    text-align: center;
-    padding: 8vh 0 4vh 0;
-    color: #F65A5B;
-}
-.post-entry-algotutor {
-    display: grid;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 50px;
-}
-
 /* internships */
 .h1-internships {
     font-size: 2rem;
